@@ -75,7 +75,7 @@ Para garantizar el correcto funcionamiento del entorno experimental y habilitar 
     ├── dataset_downstream_subtitulado_PROCESADO.csv # Imágenes anotadas con subtítulos morfológicos sin sesgos
     ├── resultados_canalizacion_rag.csv             # Historial incremental de inferencias y metadatos de ChromaDB
     └── reporte_metricas_fase4.csv                  # Matriz final consolidada de métricas de rendimiento
-
+```
 ---
 
 # Documentación Experimental e Instrucciones de Ejecución
