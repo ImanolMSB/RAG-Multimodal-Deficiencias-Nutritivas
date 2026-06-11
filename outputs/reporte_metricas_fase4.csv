@@ -1,0 +1,8 @@
+Metrica,Valor Obtenido
+Accuracy (Clasificacion vs Baseline),11.11%
+Recall@k (Encontrado),7.78%
+Precision@k (Pureza),7.78%
+MRR (Posicion),0.0778
+Token F1 (Generacion),0.1535
+ROUGE-L (Generacion),0.1581
+BERTScore (Semantica),0.7445
