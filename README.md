@@ -62,16 +62,19 @@ El pipeline de mejora mitiga el sesgo de clasificación directa dividiéndose en
 
 ---
 
-## Estructura del Repositorio
+##  Estructura del Repositorio
 
-Para garantizar el correcto funcionamiento del entorno experimental, el repositorio debe organizarse de la siguiente manera:
+Para garantizar el correcto funcionamiento del entorno experimental y habilitar la verificación de resultados, el repositorio está organizado de la siguiente manera:
 
 ```text
-├── Proyecto_PLN_Avanzado (1).ipynb      # Notebook principal con las 4 fases del experimento
-├── dataset_downstream_subtitulado.csv   # Conjunto de datos downstream con etiquetas reales (90 muestras)
-├── requirements.txt                     # Archivo de dependencias de software para Python
-└── README.md                            # Documentación e informe del proyecto
-```
+├── Proyecto_PLN_Avanzado (1).ipynb   # Notebook principal con las 4 fases del experimento
+├── dataset_downstream_subtitulado.csv # Conjunto de datos downstream original (90 muestras)
+├── requirements.txt                   # Archivo de dependencias de software para Python
+├── README.md                          # Documentación, análisis analítico e informe del proyecto
+└── outputs/                           #  Carpeta de artefactos generados automáticamente por el pipeline, se iran generando al correr el codigo y no hay que cargarlos en el entorno
+    ├── dataset_downstream_subtitulado_PROCESADO.csv # Imágenes anotadas con subtítulos morfológicos sin sesgos
+    ├── resultados_canalizacion_rag.csv             # Historial incremental de inferencias y metadatos de ChromaDB
+    └── reporte_metricas_fase4.csv                  # Matriz final consolidada de métricas de rendimiento
 
 ---
 
